@@ -53,12 +53,13 @@ public class UsuarioController {
 		return ResponseEntity.status(HttpStatus.CREATED)
 				.body(repository.save(usuario));
 	}
-	*/
+	
 	
 	@PutMapping
 	public ResponseEntity<Usuario> put(@RequestBody Usuario usuario) {
 		return ResponseEntity.ok(repository.save(usuario));
 	}
+	*/
 	
 	@DeleteMapping("/id/{id}")
 	public void delete (@PathVariable long id) {
